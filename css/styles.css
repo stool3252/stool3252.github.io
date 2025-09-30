@@ -24,6 +24,13 @@ a:hover {
     color: var(--secondary-color);
 }
 
+.active {
+    color: var(--secondary-color);
+}
+
+/* ===
+Navbar
+=== */
 .navbar {
     text-align: center;
 }
@@ -35,9 +42,9 @@ a:hover {
     gap: 1rem;
 }
 
-.active {
-    color: var(--secondary-color);
-}
+/* ===
+Footer
+=== */
 
 .group3__container {
     display: flex;
@@ -50,4 +57,61 @@ a:hover {
     align-items: center;
     display: flex;
     gap: 1rem;
+}
+
+/* ===
+Downloads
+=== */
+
+.downloads {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.downloads__title {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.downloads__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.downloads__row {
+    border-bottom: 0.5px solid #f0f0f0;
+}
+
+.downloads__cell {
+    text-align: center;
+}
+
+/* ===
+Media QWERY
+=== */
+
+@media (max-width: 600px) {
+    .navbar__links {
+        flex-direction: column;
+    }
+
+    .downloads__table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .downloads__cell {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .downloads__title {
+        text-align: center;
+    }
+
+    .group3__container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
