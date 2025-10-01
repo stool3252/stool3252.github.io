@@ -75,11 +75,11 @@ net use ${DriveLetter}: $NetworkPath /persistent:no
 
 #region === Main ===
 
-Clear-Host
 $PlainPassword = GetUserPassword -PromptMessage "Enter your Windows password for $Domain>`n"
 StoreCredentials -Domain $Domain -Username $LoginName -Password $PlainPassword
 RemoveNetworkDrives
 MapNetworkDrive -DriveLetter $DriveLetter -Path $NetworkPath
 CreateStartupScript -FilePath $CmdFile -DriveLetter $DriveLetter -NetworkPath $NetworkPath
+Clear-Host
 
 #endregion
