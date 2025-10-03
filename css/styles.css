@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
 a {
     color: #f0f0f0;
 }
@@ -49,8 +54,7 @@ Footer
 .group3__container {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
-    
+    padding: 0 2rem;    
 }
 
 .social__links {
