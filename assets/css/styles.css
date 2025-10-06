@@ -11,13 +11,16 @@
 body {
     font-family: "Pixelify Sans", sans-serif;
     background: #000;
+    font-size: 16px;
     color: #f0f0f0;
     max-width: 960px;
-    margin: 0 auto;
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+    margin: auto;
 }
 
 main {
-    margin: 2rem 0;
+    margin: 1rem 0;
     padding: 1rem;
 }
 
@@ -32,6 +35,22 @@ a:hover {
 .active {
     color: var(--secondary-color);
 }
+
+/* ===
+Starts
+=== */
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    /* para que el fondo quede detrás del contenido */
+    background: black;
+}
+
 
 /* ===
 Navbar
@@ -54,7 +73,7 @@ Footer
 .group3__container {
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;    
+    padding: 0 2rem;
 }
 
 .social__links {
@@ -68,13 +87,12 @@ Downloads
 === */
 
 .downloads {
-    margin: 2rem 0;
-    padding: 1rem;
+    margin: 1rem 0;
 }
 
 .downloads__title {
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .downloads__table {
@@ -96,6 +114,10 @@ Media QWERY
 
 @media (max-width: 600px) {
     .navbar__links {
+        flex-direction: column;
+    }
+
+    .social__links {
         flex-direction: column;
     }
 
