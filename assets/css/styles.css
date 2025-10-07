@@ -6,6 +6,16 @@
 
 :root {
     --secondary-color: #4eb3e2;
+    --color-chathams-blue-50: #f2f9fd;
+    --color-chathams-blue-100: #e3f1fb;
+    --color-chathams-blue-200: #c2e3f5;
+    --color-chathams-blue-300: #8bcdee;
+    --color-chathams-blue-500: #279ad0;
+    --color-chathams-blue-600: #187bb1;
+    --color-chathams-blue-700: #15638f;
+    --color-chathams-blue-800: #155376;
+    --color-chathams-blue-900: #174663;
+    --color-chathams-blue-950: #0f2d42;
 }
 
 body {
@@ -64,6 +74,47 @@ Navbar
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+/* ===
+Searchbar
+=== */
+
+.searchbar {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.searchbar__input {
+    background-color: #191919;
+    color: var(--secondary-color);
+    /*border: 2px solid var(--secondary-color);*/
+    padding: 0.3rem 0.4rem;
+    width: 200px;
+}
+
+.searchbar__input::placeholder {
+    color: var(--secondary-color);
+}
+
+.button__img {
+    width: 16px;
+}
+
+.searchbar__button {
+    background-color: #f0f0f0;
+    color: #000;
+    padding: 0.3rem 0.4rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.searchbar__button:hover {
+    background-color: var(--secondary-color);
 }
 
 /* ===

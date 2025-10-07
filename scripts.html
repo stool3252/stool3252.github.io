@@ -18,14 +18,20 @@
                 <a href="index.html" class="navbar__link">Home</a>
                 <a href="guides.html" class="navbar__link">Guides</a>
                 <a href="scripts.html" class="navbar__link active">Scripts</a>
-                <a href="" class="navbar__link">Resume</a>
+                <a href="resume.html" class="navbar__link">Resume</a>
             </div>
         </nav>
     </header>
     <main>
         <section class="downloads">
             <div class="downloads__container">
+
                 <h2 class="downloads__title">Index of /downloads</h2>
+                <div class="searchbar">
+                    <input type="text" placeholder="Buscar..." class="searchbar__input" id="searchbarInput">
+                    <button class="searchbar__button" id="searchButton"><img src="assets/favicons/search.png"
+                            class="button__img"></button>
+                </div>
                 <table class="downloads__table">
                     <thead class="downloads__head">
                         <tr class="downloads__row">
@@ -120,6 +126,7 @@
         </section>
     </main>
     <script src="assets/js/stars.js"></script>
+    <script src="assets/js/searchbar.js"></script>
 </body>
 
 </html>
